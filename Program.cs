@@ -104,17 +104,32 @@ Console.WriteLine("Hello, World!");
 //}
 
 //Snack 7
-int n = 10;
-int[] numbers = new int[n];
+//int n = 10;
+//int[] numbers = new int[n];
 
-for (int index = 0; index < n; index++)
+//for (int index = 0; index < n; index++)
+//{
+//    Console.Write("Digita un numero: ");
+//    int newNumber = Int32.Parse(Console.ReadLine());
+//    if(newNumber %2 != 0)
+//    {
+//        numbers[index] = newNumber;
+//    }  
+//}
+
+//Console.WriteLine(String.Join(",", numbers));
+
+//Snack 8
+
+int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
+int sum = 0;
+
+for (int index = 0; index < numbers.Length; index++)
 {
-    Console.Write("Digita un numero: ");
-    int newNumber = Int32.Parse(Console.ReadLine());
-    if(newNumber %2 != 0)
+    if (index %2 != 0)
     {
-        numbers[index] = newNumber;
-    }  
+        sum += numbers[index];
+    }
 }
 
-Console.WriteLine(String.Join(",", numbers));
+Console.WriteLine("La somma dei numeri in posizione dispari è: " + sum);
