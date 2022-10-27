@@ -136,18 +136,36 @@ Console.WriteLine("Hello, World!");
 
 //Snack 9
 
-int[] numbers = new int[50];
+//int[] numbers = new int[50];
 
-int sum = 0;
+//int sum = 0;
 
-while (sum < 50)
+//while (sum < 50)
+//{
+//    Console.Write("Digita un numero intero: ");
+//    int userNumber = Int32.Parse(Console.ReadLine());
+//    if (userNumber != 0)
+//    {
+//        sum += userNumber;
+//    }
+//}
+
+//Console.WriteLine("Stop, la somma di tutti i numeri digitati è superiore a 50!!");
+
+//Snack 10
+
+Console.Write("Quanti array vuoi creare? ");
+
+int numberOfArrayToGenerate = Int32.Parse(Console.ReadLine());
+
+for(int index = 0; index < numberOfArrayToGenerate; index++)
 {
-    Console.Write("Digita un numero intero: ");
-    int userNumber = Int32.Parse(Console.ReadLine());
-    if (userNumber != 0)
+    int[] arrayToPrint = new int[10];
+    for(int y = 0; y < 10; y++)
     {
-        sum += userNumber;
+        Random rand = new Random();
+        int randomNumber = rand.Next(1,100);
+        arrayToPrint[y] = randomNumber;
     }
+    Console.WriteLine(String.Join(",", arrayToPrint));
 }
-
-Console.WriteLine("Stop, la somma di tutti i numeri digitati è superiore a 50!!");
