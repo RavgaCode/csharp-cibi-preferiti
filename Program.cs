@@ -92,13 +92,29 @@ Console.WriteLine("Hello, World!");
 
 //Snack 6
 
-string[] invitedPeople = { "Gianni", "Piero", "Antonio" };
-Console.Write("Come ti chiami? ");
-string userName = Console.ReadLine();
-if (invitedPeople.Contains(userName))
+//string[] invitedPeople = { "Gianni", "Piero", "Antonio" };
+//Console.Write("Come ti chiami? ");
+//string userName = Console.ReadLine();
+//if (invitedPeople.Contains(userName))
+//{
+//    Console.WriteLine("Ottimo, Gatsby ti ha invitato!");
+//} else
+//{
+//    Console.WriteLine("Mi spiace, Gatsby non ti ha invitato");
+//}
+
+//Snack 7
+int n = 10;
+int[] numbers = new int[n];
+
+for (int index = 0; index < n; index++)
 {
-    Console.WriteLine("Ottimo, Gatsby ti ha invitato!");
-} else
-{
-    Console.WriteLine("Mi spiace, Gatsby non ti ha invitato");
+    Console.Write("Digita un numero: ");
+    int newNumber = Int32.Parse(Console.ReadLine());
+    if(newNumber %2 != 0)
+    {
+        numbers[index] = newNumber;
+    }  
 }
+
+Console.WriteLine(String.Join(",", numbers));
