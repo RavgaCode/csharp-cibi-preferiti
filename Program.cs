@@ -9,3 +9,4 @@ for(; index < favouriteFoods.Length; index++)
     Console.WriteLine(favouriteFoods[index]);
 }
 Console.WriteLine(favouriteFoods[0]);
+Console.WriteLine(favouriteFoods[favouriteFoods.Length - 1]);
