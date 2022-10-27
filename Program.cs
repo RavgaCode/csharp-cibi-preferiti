@@ -65,17 +65,18 @@ Console.WriteLine("Hello, World!");
 
 //Snack 4
 
-//int index = 2;
-//int sum=0;
-//int average = (10 - 2) / 2;
+int index = 2;
+int sum = 0;
 
-//for(; index <11; index++)
-//{
-//    sum += index;
 
-//}
-//Console.WriteLine("La somma dei numeri da 2 a 10 è: " + sum);
-//Console.WriteLine("La media dei numeri da 2 a 10 è: " + average);
+for (; index < 11; index++)
+{
+    sum += index;
+
+}
+int average = sum / 8;
+Console.WriteLine("La somma dei numeri da 2 a 10 è: " + sum);
+Console.WriteLine("La media dei numeri da 2 a 10 è: " + average);
 
 //Snack 5
 
@@ -154,18 +155,18 @@ Console.WriteLine("Hello, World!");
 
 //Snack 10
 
-Console.Write("Quanti array vuoi creare? ");
+//Console.Write("Quanti array vuoi creare? ");
 
-int numberOfArrayToGenerate = Int32.Parse(Console.ReadLine());
+//int numberOfArrayToGenerate = Int32.Parse(Console.ReadLine());
 
-for(int index = 0; index < numberOfArrayToGenerate; index++)
-{
-    int[] arrayToPrint = new int[10];
-    for(int y = 0; y < 10; y++)
-    {
-        Random rand = new Random();
-        int randomNumber = rand.Next(1,100);
-        arrayToPrint[y] = randomNumber;
-    }
-    Console.WriteLine(String.Join(",", arrayToPrint));
-}
+//for(int index = 0; index < numberOfArrayToGenerate; index++)
+//{
+//    int[] arrayToPrint = new int[10];
+//    for(int y = 0; y < 10; y++)
+//    {
+//        Random rand = new Random();
+//        int randomNumber = rand.Next(1,100);
+//        arrayToPrint[y] = randomNumber;
+//    }
+//    Console.WriteLine(String.Join(",", arrayToPrint));
+//}
