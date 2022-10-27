@@ -34,22 +34,31 @@ Console.WriteLine("Hello, World!");
 
 //Snack 2
 
-Console.Write("Scrivi una parola ");
-string userFirstWord = Console.ReadLine();
-Console.Write("Scrivi una seconda parola ");
-string userSecondWord = Console.ReadLine();
-if(userFirstWord.Length < userSecondWord.Length)
-{
-    Console.WriteLine("La parola più corta è: " + userFirstWord);
-    Console.WriteLine("La parola più lunga è: " + userSecondWord);
-} else if(userFirstWord.Length > userSecondWord.Length)
-{
-    Console.WriteLine("La parola più corta è: " + userSecondWord);
-    Console.WriteLine("La parola più lunga è: " + userFirstWord);
-}
-else
-{
-    Console.WriteLine("Le due parole {0} e {1} sono di uguale lunghezza", userFirstWord, userSecondWord);
-}
+//Console.Write("Scrivi una parola ");
+//string userFirstWord = Console.ReadLine();
+//Console.Write("Scrivi una seconda parola ");
+//string userSecondWord = Console.ReadLine();
+//if(userFirstWord.Length < userSecondWord.Length)
+//{
+//    Console.WriteLine("La parola più corta è: " + userFirstWord);
+//    Console.WriteLine("La parola più lunga è: " + userSecondWord);
+//} else if(userFirstWord.Length > userSecondWord.Length)
+//{
+//    Console.WriteLine("La parola più corta è: " + userSecondWord);
+//    Console.WriteLine("La parola più lunga è: " + userFirstWord);
+//}
+//else
+//{
+//    Console.WriteLine("Le due parole {0} e {1} sono di uguale lunghezza", userFirstWord, userSecondWord);
+//}
 
+//Snack 3
+int index, num, sum = 0;
 
+for(index = 0; index < 10; index++)
+{
+    Console.Write("Inserisci un numero: ");
+    num = Int32.Parse(Console.ReadLine());
+    sum += num;
+}
+Console.WriteLine("La somma totale è: " + sum);
