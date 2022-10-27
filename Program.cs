@@ -6,7 +6,7 @@ int index = 0;
 
 for(; index < favouriteFoods.Length; index++)
 {
-    Console.WriteLine(favouriteFoods[index]);
+    Console.WriteLine(index +1 + "-" + favouriteFoods[index]);
 }
 Console.WriteLine(favouriteFoods[0]);
 Console.WriteLine(favouriteFoods[favouriteFoods.Length - 1]);
