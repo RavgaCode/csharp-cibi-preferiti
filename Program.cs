@@ -79,13 +79,26 @@ Console.WriteLine("Hello, World!");
 
 //Snack 5
 
-Console.Write("Digita un numero ");
-int userNumber = Int32.Parse(Console.ReadLine());
+//Console.Write("Digita un numero ");
+//int userNumber = Int32.Parse(Console.ReadLine());
 
-if (userNumber % 2 == 0)
+//if (userNumber % 2 == 0)
+//{
+//    Console.WriteLine("Il numero {0} è pari", userNumber);
+//} else if (userNumber % 2 != 0)
+//{
+//    Console.WriteLine("Il numero {0} non è pari. Il seguente numero {1} è pari", userNumber, userNumber + 1);
+//}
+
+//Snack 6
+
+string[] invitedPeople = { "Gianni", "Piero", "Antonio" };
+Console.Write("Come ti chiami? ");
+string userName = Console.ReadLine();
+if (invitedPeople.Contains(userName))
 {
-    Console.WriteLine("Il numero {0} è pari", userNumber);
-} else if (userNumber % 2 != 0)
+    Console.WriteLine("Ottimo, Gatsby ti ha invitato!");
+} else
 {
-    Console.WriteLine("Il numero {0} non è pari. Il seguente numero {1} è pari", userNumber, userNumber + 1);
+    Console.WriteLine("Mi spiace, Gatsby non ti ha invitato");
 }
