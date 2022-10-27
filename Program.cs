@@ -121,15 +121,33 @@ Console.WriteLine("Hello, World!");
 
 //Snack 8
 
-int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
+//int[] numbers = { 1, 2, 3, 4, 5, 6, 7 };
+//int sum = 0;
+
+//for (int index = 0; index < numbers.Length; index++)
+//{
+//    if (index %2 != 0)
+//    {
+//        sum += numbers[index];
+//    }
+//}
+
+//Console.WriteLine("La somma dei numeri in posizione dispari è: " + sum);
+
+//Snack 9
+
+int[] numbers = new int[50];
+
 int sum = 0;
 
-for (int index = 0; index < numbers.Length; index++)
+while (sum < 50)
 {
-    if (index %2 != 0)
+    Console.Write("Digita un numero intero: ");
+    int userNumber = Int32.Parse(Console.ReadLine());
+    if (userNumber != 0)
     {
-        sum += numbers[index];
+        sum += userNumber;
     }
 }
 
-Console.WriteLine("La somma dei numeri in posizione dispari è: " + sum);
+Console.WriteLine("Stop, la somma di tutti i numeri digitati è superiore a 50!!");
