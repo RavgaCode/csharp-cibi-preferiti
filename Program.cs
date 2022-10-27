@@ -53,12 +53,26 @@ Console.WriteLine("Hello, World!");
 //}
 
 //Snack 3
-int index, num, sum = 0;
+//int index, num, sum = 0;
 
-for(index = 0; index < 10; index++)
-{
-    Console.Write("Inserisci un numero: ");
-    num = Int32.Parse(Console.ReadLine());
-    sum += num;
-}
-Console.WriteLine("La somma totale è: " + sum);
+//for(index = 0; index < 10; index++)
+//{
+//    Console.Write("Inserisci un numero: ");
+//    num = Int32.Parse(Console.ReadLine());
+//    sum += num;
+//}
+//Console.WriteLine("La somma totale è: " + sum);
+
+//Snack 4
+
+//int index = 2;
+//int sum=0;
+//int average = (10 - 2) / 2;
+
+//for(; index <11; index++)
+//{
+//    sum += index;
+    
+//}
+//Console.WriteLine("La somma dei numeri da 2 a 10 è: " + sum);
+//Console.WriteLine("La media dei numeri da 2 a 10 è: " + average);
