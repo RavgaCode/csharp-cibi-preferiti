@@ -14,21 +14,42 @@ Console.WriteLine("Hello, World!");
 
 
 //Snack 1
-Console.Write("Digita un numero ");
-int userFirstNumber = Int32.Parse(Console.ReadLine());
-Console.Write("Digita un secondo numero ");
-int userSecondNumber = Int32.Parse(Console.ReadLine());
+//Console.Write("Digita un numero ");
+//int userFirstNumber = Int32.Parse(Console.ReadLine());
+//Console.Write("Digita un secondo numero ");
+//int userSecondNumber = Int32.Parse(Console.ReadLine());
 
-if (userFirstNumber > userSecondNumber)
+//if (userFirstNumber > userSecondNumber)
+//{
+//    Console.WriteLine("Il numero più grande è: " + userFirstNumber);
+//} else if(userFirstNumber < userSecondNumber)
+//{
+//    Console.WriteLine("Il numero più grande è: " + userSecondNumber);
+//}
+//else
+//{
+//    Console.WriteLine("I due numeri sono uguali!");
+//}
+
+
+//Snack 2
+
+Console.Write("Scrivi una parola ");
+string userFirstWord = Console.ReadLine();
+Console.Write("Scrivi una seconda parola ");
+string userSecondWord = Console.ReadLine();
+if(userFirstWord.Length < userSecondWord.Length)
 {
-    Console.WriteLine("Il numero più grande è: " + userFirstNumber);
-} else if(userFirstNumber < userSecondNumber)
+    Console.WriteLine("La parola più corta è: " + userFirstWord);
+    Console.WriteLine("La parola più lunga è: " + userSecondWord);
+} else if(userFirstWord.Length > userSecondWord.Length)
 {
-    Console.WriteLine("Il numero più grande è: " + userSecondNumber);
+    Console.WriteLine("La parola più corta è: " + userSecondWord);
+    Console.WriteLine("La parola più lunga è: " + userFirstWord);
 }
 else
 {
-    Console.WriteLine("I due numeri sono uguali!");
+    Console.WriteLine("Le due parole {0} e {1} sono di uguale lunghezza", userFirstWord, userSecondWord);
 }
 
 
