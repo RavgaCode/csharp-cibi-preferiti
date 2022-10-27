@@ -72,7 +72,20 @@ Console.WriteLine("Hello, World!");
 //for(; index <11; index++)
 //{
 //    sum += index;
-    
+
 //}
 //Console.WriteLine("La somma dei numeri da 2 a 10 è: " + sum);
 //Console.WriteLine("La media dei numeri da 2 a 10 è: " + average);
+
+//Snack 5
+
+Console.Write("Digita un numero ");
+int userNumber = Int32.Parse(Console.ReadLine());
+
+if (userNumber % 2 == 0)
+{
+    Console.WriteLine("Il numero {0} è pari", userNumber);
+} else if (userNumber % 2 != 0)
+{
+    Console.WriteLine("Il numero {0} non è pari. Il seguente numero {1} è pari", userNumber, userNumber + 1);
+}
