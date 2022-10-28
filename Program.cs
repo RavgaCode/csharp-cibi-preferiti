@@ -65,18 +65,18 @@ Console.WriteLine("Hello, World!");
 
 //Snack 4
 
-int index = 2;
-int sum = 0;
+//int index = 2;
+//int sum = 0;
 
 
-for (; index < 11; index++)
-{
-    sum += index;
+//for (; index < 11; index++)
+//{
+//    sum += index;
 
-}
-int average = sum / 8;
-Console.WriteLine("La somma dei numeri da 2 a 10 è: " + sum);
-Console.WriteLine("La media dei numeri da 2 a 10 è: " + average);
+//}
+//int average = sum / 9;
+//Console.WriteLine("La somma dei numeri da 2 a 10 è: " + sum);
+//Console.WriteLine("La media dei numeri da 2 a 10 è: " + average);
 
 //Snack 5
 
@@ -170,3 +170,29 @@ Console.WriteLine("La media dei numeri da 2 a 10 è: " + average);
 //    }
 //    Console.WriteLine(String.Join(",", arrayToPrint));
 //}
+
+//Snack 11
+//Dare la possibilità di inserire due parole.
+//Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
+//Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la più lunga delle due. (stampare fuori dalla funzione)
+
+string stringLengthCheck (string word1, string word2)
+{
+    if(word1.Length > word2.Length)
+    {
+        return word1;
+    } else if (word1.Length < word2.Length)
+    {
+        return word2;
+    } else
+    {
+        return word1 + "" + word2;
+    }
+}
+
+Console.Write("Digita una parola: ");
+string userWord1 = Console.ReadLine();
+Console.Write("Digita una seconda parola: ");
+string userWord2 = Console.ReadLine();
+string result = stringLengthCheck(userWord1,userWord2);
+Console.WriteLine("La parola più lunga è: " + result);
